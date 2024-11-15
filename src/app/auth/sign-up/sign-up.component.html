@@ -1,0 +1,36 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h3 class="text-center mb-4">Sign Up</h3>
+      <form (ngSubmit)="onSubmit()" [formGroup]="authForm">
+        <!-- Form Fields -->
+        <div class="mb-6">
+          <app-input inputType="text" label="Username" [control]="authForm.get('username')"
+            class="form-control"></app-input>
+        </div>
+        <div class="mb-6">
+          <app-input inputType="password" label="Password" [control]="authForm.get('password')"
+            class="form-control"></app-input>
+        </div>
+        <div class="mb-6">
+          <app-input inputType="password" label="Confirm Password" [control]="authForm.get('passwordConfirmation')"
+            class="form-control"></app-input>
+        </div>
+        <div
+          *ngIf="authForm.get('password')?.touched && authForm.get('passwordConfirmation')?.touched && authForm.errors"
+          class="alert alert-danger">
+          <p *ngIf="authForm.errors?.passwordsDontMatch">Password and Password Confirmation must match</p>
+          <p *ngIf="authForm.errors?.noConnection">No internet connection detected, failed to sign up</p>
+          <p *ngIf="authForm.errors?.unknownError">Failed to sign up</p>
+        </div>
+        <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+        <div class="text-center mt-3">
+          <p>Already a User?</p>
+          <button class="btn btn-outline-secondary" (click)="signin()">SignIn</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

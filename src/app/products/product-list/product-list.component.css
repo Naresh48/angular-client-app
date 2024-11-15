@@ -1,0 +1,96 @@
+/* Set the background and text color for table headers */
+thead th {
+  background-color: #343a40;
+  /* Dark background */
+  color: #ffffff;
+  /* White text */
+  font-weight: bold;
+  text-align: center;
+  /* Center align the text */
+}
+
+/* Add padding to table rows for better readability */
+tbody td {
+  padding: 12px;
+  text-align: center;
+  /* Center align the data */
+}
+
+/* Hover effect for table rows */
+.table-hover tbody tr:hover {
+  background-color: #0d7265;
+  /* Light background on hover */
+}
+
+/* Add some spacing between table and other content */
+.table {
+  margin-top: 5px;
+}
+
+/* Customize the header */
+h2 {
+  color: #143457;
+  /* Bootstrap primary color for heading */
+  font-weight: bold;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-controls .ngx-pagination {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pagination-controls .ngx-pagination li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.pagination-controls .ngx-pagination li a {
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+  text-decoration: none;
+  color: #007bff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-controls .ngx-pagination li a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination-controls .ngx-pagination .active a {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.pagination-controls .ngx-pagination .disabled a {
+  background-color: #e9ecef;
+  color: #6c757d;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.dropdown-menu {
+  min-width: 100px;
+  background-color: #f8f9fa;
+  color: #b3d2f3;
+}
+
+/* .dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #007bff;
+} */
+
+.dropdown-item {
+  background-color: #f8f9fa;
+  color: #2f3a46;
+}

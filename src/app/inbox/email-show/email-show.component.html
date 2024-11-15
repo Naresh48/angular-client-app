@@ -1,0 +1,19 @@
+<div class="container mt-4">
+  <div class="header bg-light p-3 mb-4 border rounded">
+      <div class="d-flex justify-content-between align-items-start mb-2">
+          <h3 class="mb-0">{{ email.subject }}</h3>
+          <app-email-reply [email]="email"></app-email-reply>
+      </div>
+      <div class="mb-2">
+          <div>
+              From: <i>{{ email.from }}</i>
+          </div>
+          <div>
+              To: <i>{{ email.to }}</i>
+          </div>
+      </div>
+  </div>
+  <div [innerHTML]="email.html" class="email-content border rounded p-3 bg-white"></div>
+</div>
+
+  

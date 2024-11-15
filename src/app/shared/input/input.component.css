@@ -1,0 +1,36 @@
+/* styles.css or component-specific CSS */
+.form-group {
+  margin-bottom: 1.5rem; /* Space between form fields */
+}
+
+label {
+  /* display: block; */
+  margin-bottom: .10rem; /* Space between label and input */
+  font-weight: 600; /* Bold label text */
+}
+
+.form-control {
+  border: 1px solid #ced4da; /* Border color for inputs and textareas */
+  border-radius: .375rem; /* Rounded corners */
+  padding: .375rem .75rem; /* Padding inside input fields */
+  font-size: 1rem; /* Font size for input text */
+}
+
+.form-control:focus {
+  border-color: #80bdff; /* Border color on focus */
+  box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .25); /* Shadow on focus */
+}
+
+.invalid-feedback {
+  display: none; /* Hide feedback by default */
+  color: #dc3545; /* Red color for error messages */
+  margin-top: .5rem; /* Space above error messages */
+}
+
+.invalid-feedback p {
+  margin: 0; /* Remove default margin from paragraphs */
+}
+
+.invalid-feedback.d-block {
+  display: block; /* Show feedback if there are errors */
+}

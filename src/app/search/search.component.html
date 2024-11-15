@@ -1,0 +1,14 @@
+<div class="search-container">
+    <input
+      type="text"
+      id="search-input"
+      class="form-control"
+      placeholder="Search for a location"
+    />
+    <ul id="suggestions" class="dropdown-menu" *ngIf="suggestions.length > 0">
+      <li *ngFor="let suggestion of suggestions" (click)="selectSuggestion(suggestion)">
+        {{ suggestion.description }}
+      </li>
+    </ul>
+  </div>
+  

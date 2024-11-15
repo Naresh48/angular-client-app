@@ -1,0 +1,28 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h3 class="text-center mb-4">Sign In</h3>
+      <form (ngSubmit)="onSubmit()" [formGroup]="authForm">
+        <div class="mb-3">
+          <app-input inputType="text" label="Username" [control]="authForm.get('username')"></app-input>
+        </div>
+        <div class="mb-3">
+          <app-input inputType="password" label="Password" [control]="authForm.get('password')"></app-input>
+        </div>
+
+        <div *ngIf="authForm.errors" class="alert alert-danger">
+          <p *ngIf="authForm.errors.credentials">Invalid username or password</p>
+        </div>
+
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+
+      <div class="text-center mt-3">
+        <p>New User?</p>
+        <button class="btn btn-link" (click)="signup()">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>

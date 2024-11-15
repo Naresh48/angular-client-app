@@ -1,0 +1,42 @@
+/* styles.css or component-specific CSS */
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.col-md-4, .col-lg-3, .col-md-8, .col-lg-9 {
+    padding: 0;
+}
+
+.app-email-create, .app-email-index {
+    margin-bottom: 0; /* Remove bottom margin to reduce space */
+}
+
+router-outlet {
+    margin-top: 0; /* Remove top margin to reduce space */
+}
+
+.placeholder {
+    display: block;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: .375rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    color: #6c757d;
+}
+
+.placeholder .icon {
+    font-size: 1.5rem;
+}
+
+.icon {
+    margin-right: 0.5rem; /* Space between icon and text */
+}
+
+.container {
+    padding: 0 1rem; /* Add horizontal padding to container */
+}

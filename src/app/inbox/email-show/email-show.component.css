@@ -1,0 +1,22 @@
+.header {
+    background-color: #f8f9fa; /* Light grey background for the header */
+}
+
+.email-content {
+    line-height: 1.6; /* Improve readability of email content */
+    word-wrap: break-word; /* Ensure long words break and wrap */
+}
+
+.email-content img {
+    max-width: 100%; /* Ensure images do not overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.email-content a {
+    color: #007bff; /* Bootstrap primary link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.email-content a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

@@ -1,0 +1,48 @@
+<h2 class="text-center mb-4">Product List</h2>
+
+<div class="container mt-4 position-relative">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-between align-items-center mb-3">
+      <h3 class="m-0">Products</h3>
+      <button (click)="addProduct()" type="button" class="btn btn-create-product btn-secondary">
+        Create Product
+      </button>
+    </div>
+  </div>
+
+  <table class="table table-bordered table-striped table-hover">
+    <thead class="bg-dark text-light">
+      <tr>
+        <th scope="col">Product Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Product Quantity</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products | paginate: { itemsPerPage: 5, currentPage: p }">
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.quantity }}</td>
+        <td>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Actions
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" (click)="deleteProduct(product._id)">Delete</a></li>
+              <li><a class="dropdown-item" (click)="updateProduct(product._id)">Update</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <pagination-controls (pageChange)="paginate($any($event))" 
+                       directionLinks="true" 
+                       boundaryLinks="true" 
+                       maxSize="5">
+  </pagination-controls>
+</div>

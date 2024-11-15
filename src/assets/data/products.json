@@ -1,0 +1,80 @@
+[
+  {
+    "id": 101,
+    "name": "mouse pad",
+    "price": 100,
+    "place": "Ahmedabad"
+  },
+  {
+    "id": 102,
+    "name": "tv remote",
+    "price": 150,
+    "place": "Vadodara"
+  },
+  {
+    "id": 103,
+    "name": "arduino",
+    "price": 200,
+    "place": "Surat"
+  },
+  {
+    "id": 104,
+    "name": "raspberry pi",
+    "price": 250,
+    "place": "Rajkot"
+  },
+  {
+    "id": 105,
+    "name": "mouse",
+    "price": 300,
+    "place": "Diu"
+  },
+  {
+    "id": 106,
+    "name": "male wires",
+    "price": 350,
+    "place": "Mumbai"
+  },
+  {
+    "id": 107,
+    "name": "female wires",
+    "price": 400,
+    "place": "Pune"
+  },
+  {
+    "id": 108,
+    "name": "lcd 16*16",
+    "price": 450,
+    "place": "Banglore"
+  },
+  {
+    "id": 109,
+    "name": "keypad",
+    "price": 500,
+    "place": "Chennai"
+  },
+  {
+    "id": 110,
+    "name": "led's pack",
+    "price": 550,
+    "place": "Rishikesh"
+  },
+  {
+    "id": 111,
+    "name": "shoes",
+    "price": 600,
+    "place": "Delhi"
+  },
+  {
+    "id": 112,
+    "name": "watch",
+    "price": 650,
+    "place": "Punjab"
+  },
+  {
+    "id": 113,
+    "name": "perfume",
+    "price": 700,
+    "place": "Udaipur"
+  }
+]

@@ -1,0 +1,18 @@
+/* styles.css or component-specific CSS */
+.list-group-item {
+  border: 1px solid #dee2e6; /* Customize border color if needed */
+  border-radius: .375rem; /* Rounded corners */
+  margin-bottom: .5rem; /* Space between list items */
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa; /* Light grey background on hover */
+}
+
+.content {
+  padding: 0.5rem 1rem; /* Padding around content */
+}
+
+.active {
+  font-weight: bold; /* Highlight active link */
+}

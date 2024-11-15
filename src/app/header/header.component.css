@@ -1,0 +1,16 @@
+.nav-link.active {
+    font-weight: bold;
+    background-color: #bb7575; /* Optional: background color */
+  }
+
+.navbar {
+    background-color: #6a3f3f
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem; /* Optional: add padding for a better appearance */
+}

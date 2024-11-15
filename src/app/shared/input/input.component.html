@@ -1,0 +1,19 @@
+<div class="form-group">
+  <label>{{ label }}</label>
+  <input
+    *ngIf="inputType"
+    [type]="inputType"
+    [formControl]="control"
+    class="form-control"
+  />
+  <textarea
+    *ngIf="controlType === 'textarea'"
+    [formControl]="control"
+    class="form-control"
+  ></textarea>
+  <div *ngIf="control?.invalid && (control?.dirty || control?.touched)" class="invalid-feedback">
+    <p *ngIf="control?.errors?.required">This field is required.</p>
+    <p *ngIf="control?.errors?.email">Please enter a valid email address.</p>
+    <!-- Add more error messages as needed -->
+  </div>
+</div>

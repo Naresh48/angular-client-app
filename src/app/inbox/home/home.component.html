@@ -1,0 +1,30 @@
+<div class="container mt-4 position-relative">
+    <div class="row">
+
+        <div class="col-12">
+            <button (click)="signOut()" type="button" class="btn btn-dark position-absolute top-0 end-0 mt-2 me-2">
+              SignOut
+            </button>
+          </div>
+        <!-- Placeholder Message -->
+        <div class="col-12 mb-4 d-flex align-items-center justify-content-center">
+            <span class="Placeholder bg-warning d-flex align-items-center">
+                <span class="icon me-2">
+                    <i class="fas fa-envelope-open-text"></i>
+                </span>
+                <bdi>Select an email to open</bdi>
+            </span>
+        </div>
+
+        <!-- Email List -->
+        <div class="col-md-4 col-lg-3 mb-4">
+            <app-email-create></app-email-create>
+            <app-email-index></app-email-index>
+        </div>
+
+        <!-- Email Details -->
+        <div class="col-md-8 col-lg-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

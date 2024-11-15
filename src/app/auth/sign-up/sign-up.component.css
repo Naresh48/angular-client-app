@@ -1,0 +1,10 @@
+.form-control {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}

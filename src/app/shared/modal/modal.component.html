@@ -1,0 +1,16 @@
+<div class="modal fade show" tabindex="-1" role="dialog" style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <ng-content select="[modalTitle]"></ng-content>
+                <button type="button" class="btn-close" (click)="onDismissClick()"></button>
+            </div>
+            <div class="modal-body">
+                <ng-content></ng-content>
+            </div>
+            <div class="modal-footer">
+                <ng-content select="[modalFooter]"></ng-content>
+            </div>
+        </div>
+    </div>
+</div>
